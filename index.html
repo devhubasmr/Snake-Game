@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game with javascript | Dev Hub Asmr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="score">
+        score : <span class="score-val"></span>
+    </div>
+
+    <div class="container">
+        <div class="canvas-wrapper">
+            <canvas width="400" height="400"></canvas>
+        </div>
+        <div class="controls">
+            <button class="button-start">Start</button>
+            <button class="button-pause">Pause</button>
+            <div class="range range-difficulty">
+                <label for="difficulty">Speed</label>
+                <div class="range-wrapper">
+                    <span class="range-slider"></span>
+                    <div class="range-value"></div>
+                    <input type="range" name="difficulty" value="8" min="1" max="10" step="1">
+                </div>
+            </div>
+            <div class="range range-columns">
+                <label for="range-columns">Cells</label>
+                <div class="range-wrapper">
+                    <span class="range-slider"></span>
+                    <div class="range-value"></div>
+                    <input type="range" name="columns" value="20" min="10" max="100" step="10">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
